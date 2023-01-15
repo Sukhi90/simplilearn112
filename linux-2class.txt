@@ -124,6 +124,235 @@ pwd
 cd ../..  (you will go back 2 steps)
 pwd        
 
+18) copy the file 
+
+cat > c1.txt 
+first file
+(press ctrl d to exit)
+
+cp c1.txt c2.txt     (c1.txt is the source file and c2.txt woud be the destination file)
+
+(copy the content of c1.txt to c2.txt and also create c2.txt ...)
+
+cat c2.txt   (o/p : first file)
+
+cat c1.txt (o/p : first file)  
+
+
+19) Lab: Move the file into directory
+
+touch newfile
+
+ls
+
+mkdir newdirectory
+
+Now i want to move this newfile inside the newdirectory which i created
+
+mv newfile newdirectory    (move the newfile which you created above in the newdirectory which you created above)
+
+ls  (you will see that newfile is missing)
+
+cd newdirectory   (change directory to newdirectory)
+
+ls   (you will the newfile is present in the directory which we have created) 
+
+cd ..
+
+
+
+20) lab: i want to rename a file and give a new name to that file
+
+
+touch hellofile.txt
+
+now i want to rename this file to simpli.txt
+
+mv hellofile.txt simpli.txt 
+
+ls 
+
+(you will see that hellofile.txt name is replaced with simpli.txt name) 
+
+
+
+21) Hidden files in linux
+
+touch .akshatfile    (whenever you put . in front of any file it would be created as a hidden file)
+
+ls    (you will not see that file ) 
+
+ls -a   (list all the files inc hidden files)
+
+22)  Lets see how we can remove the files and directory in linux  
+
+
+``````````rmdir  -> this command is used to remove a specidc directory but it should a empty directory without any files in it `````````````
+
+Lab: 
+
+mkdir hellodirectory
+ls
+
+rmdir hellodirectory
+
+ls    (the directory woudl be removed)
+######
+
+mkdir hellodirectory    (created the hellodirectory)
+
+cd hellodirectory   (get inside the hellodirectory)
+
+touch file1   (create the file1 in hellodirectory)
+
+cd ..   (come out of hellodirectory) 
+
+rmdir hellodirectory  (since this directoty is not empty you will get an error) (o/p: rmdir: failed to remove ‘hellodirectory’: Directory not empty) 
+
+``````````````` rm -rf  -> Remove both the parent and child directory ...it will also remove delete files ....f -> forefully````````
+
+
+mkdir -p akshatgupta/simpli   (create a directory named akshatgupta and inside that directory another directory(child) is created with name simpli_ 
+
+
+rm -rf akshatgupta   -> delete the directory as well as sub directory) 
+
+cat > learndevops.txt
+learning devops
+
+(press ctrl d to quit)
+
+rm -rf learndevops.txt 
+
+ls   (the file would be removed)
+
+rm -rf hellodirectory   (the directory we created above)
+
+ls 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
