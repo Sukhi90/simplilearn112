@@ -74,6 +74,123 @@ cat akshat.txt   (you will see content: akshat is teaching devops certification 
 cat akshat.txt  (you will see akshat.txt content is deleted ) 
 
 
+16) Vi editor : text editor   (for example it will create a file for you and open that file so that you can put the content into the file)
+
+vi devops.txt
+
+(the devops.txt file editor will open in front of you )
+
+To start inserting in the file devops.txt press i   (which is insert) 
+hello simplilearn,
+hope you are doing great .
+i am also good. I am leanring devops today
+
+now to save the file :   
+(press esc and then) 
+:w -> save the file but not quit
+:q ->  quit the file but not save 
+:wq or :x-> save the file and quit
+
+(to come out of file press esc :wq) 
+
+cat devops.txt 
+
+
+17) Creating a directory  (it is a folder in which we can create the files) 
+
+mkdir akshat  
+
+(create a directory (folder) with name akshat ) 
+
+cd akshat 
+
+(change directory to akshat ..you will get inside akshat directory) 
+
+pwd     (to see your current working directory use pwd command)  (o/p : /home/ec2-user/akshat)
+
+mkdir a1 a2 a3   (it will create multiple directories for you)
+
+ls   (you will see a1 a2 and a3) 
+
+cd ..     (between cd and .. there should be space )( go back one step ) 
+
+pwd   (o/p: /home/ec2-user) 
+
+###########GOING BACK 2 steps in a directory###
+
+cd akshat 
+cd a1
+pwd
+cd ../..  (you will go back 2 steps)
+pwd        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
