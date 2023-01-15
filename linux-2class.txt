@@ -230,6 +230,89 @@ rm -rf hellodirectory   (the directory we created above)
 
 ls 
 
+###### ADD ON COMMANDS #################
+
+
+23) to check the Operating system you are using in your server
+
+cat /etc/os-release
+
+o/p: NAME="Amazon Linux"
+VERSION="2"
+ID="amzn"
+ID_LIKE="centos rhel fedora"
+VERSION_ID="2"
+PRETTY_NAME="Amazon Linux 2"
+ANSI_COLOR="0;33"
+CPE_NAME="cpe:2.3:o:amazon:amazon_linux:2"
+HOME_URL="https://amazonlinux.com/"
+
+
+24) Install a package /software in linux  (you need to be a sudo user to install these packages) 
+
+lets say for example we want to install apache server (httpd )
+
+yum install httpd 
+
+lets say we want to install dockers 
+
+yum install docker 
+
+yum: yellow dog updater . YUM is the primary package management tool for 
+installing, updating, removing, and managing software packages in Red Hat Enterprise Linux. 
+
+
+yum install git 
+
+
+
+Lab:
+
+yum install httpd   (it will install the httpd package )
+
+which httpd   (location of httpd)
+
+yum install docker -y (here -y will ensure that everysetting is kept as default it will not ask you is it ok while installing the software) 
+
+
+yum remove httpd -y   (it will delete the software httpd from your linux machine)
+
+which httpd   (no httpd found)
+
+yum remove docker -y (it will delete the software docker from your linux machine)
+
+yum install docker -y
+
+yum install httpd -y
+
+
+yum update docker -y   (this will update the docker software in your linux machine) 
+
+
+yum update -y (this will update my complete linux machine) (ALL THE SOFTWARES IN YOUR LINUX MACHINE WOULD BE UPDATED ) 
+
+yum list installed  (to see all the packages ) 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
