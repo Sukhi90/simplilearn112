@@ -1,0 +1,91 @@
+GIT :
+** WD: working directory
+** SA : staging area
+** LR : local repo 
+
+1) Create a folder and get inside the folder. 
+Inside the folder right click and open git bash
+
+2) git init  (start the git repo in your folder)
+
+3) git config --global user.name "akshat"  (only one time process in the laptop) 
+
+4) git config --global user.email "akshat@apicletech.com" (only one time process in the laptop)
+
+5) git config --list   (press q to come out of it) 
+
+6) touch file1 
+
+7) cat > index.html
+hello world 
+(ctrl d to exit)
+
+8) git status   (it will show the status of the file...if the file name is in red it shows the file
+                  is in working directory)
+
+9) git add .    (it will move the files from the working directory to the 
+                  staging area ...you can also use git add <<filename>> to move  a single file to staging area)
+
+10) git status   (it will show the status of the files ....if the file is in green color it shows the file
+                    is in staging area)
+
+11) git rm --cached file1  (it will unstage the file from the staging area and move back to the WD**)
+
+12) git status   (you will see file1 in red and index.html in green )
+
+13) vi index.html  (press enter)
+
+press i to insert
+
+add some extra content in the file
+
+press esc :wq
+
+14) git status   (you will see that index.html is modified)
+
+####NOW I WANT TO CHECK WHAT EXACTLY IS MODIFIED IN INDEX.HTML ###########
+
+15) git diff index.html   (this command will show what exactly the changes we have made in index.html file )
+
+16) git add .
+
+17) git status 
+
+##############Lets now move the files from the staging area to the local repo...creating a local version######
+
+18) git commit -m"first commit"   (it will save the file as a version in the local repository ...where -m denotes message)
+
+
+19) git log        (to check the local version we will use git log)
+
+
+20) git log --oneline    (to see the local version details in a single line)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
