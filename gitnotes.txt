@@ -61,6 +61,45 @@ press esc :wq
 
 20) git log --oneline    (to see the local version details in a single line)
 
+#########################################
+
+21) go to github ...if you have an account login ...otherwise signup 
+
+22) create a repo -> create a public repo 
+ 
+23) git remote add origin <<repo url>>
+
+24) git remote -v   (show the remote origin )
+
+25) git push -u origin master
+
+26) now the pop up will open in front of you --> token 
+
+27) go to github.com -> top right corner click on the profile (circle) --> setting --> developer setting https://github.com/settings/tokens
+
+28) create personal access token - classic ....
+
+In note put the name 
+expirating -> 30 days
+tick the repo 
+
+scroll down and generate the token
+
+copy the token which is shown in front of u 
+
+29) paste the token in the pop up which is appreared in front if u
+
+
+#####################################################
+
+
+
+
+
+
+
+
+
 
 
 
