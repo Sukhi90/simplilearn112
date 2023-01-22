@@ -248,6 +248,52 @@ and finalizing the final content.
 93) git log --oneline --graph    (it will show you the log via graphical format) 
 
 
+#############GIT BRANCH USING REBASE ####################
+
+94) git branch branch2
+
+95) git checkout branch2
+
+96) touch file0982
+
+97) git add .
+
+98) git commit -m"c6"
+
+99) touch file0833
+
+100) git add .
+
+101) git commit -m"c7"
+
+102) git checkout master
+
+103) touch file998393
+
+104) git add .
+
+105) git commit -m"c8"
+
+106) git rebase branch2
+
+107) git log --oneline --graph   (you will get linear graph in this case) 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
