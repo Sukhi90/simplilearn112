@@ -90,7 +90,252 @@ copy the token which is shown in front of u
 29) paste the token in the pop up which is appreared in front if u
 
 
-#####################################################
+####IGNORING THE FILES ##############
+
+30) touch a.log b.log c.log d.log e.log
+
+31) git status    (you will see the files a.log b.log c.log d.log e.log in red color...we need to ignore the files with suffix .log)
+
+32) vi .gitignore
+(press i) 
+
+*.log
+
+(press esc :wq)
+
+33) git status   (you will see that only .gitignore file is showing in red color which means it is in working directory)
+
+34) git add .   (put the gitignore file in staging area)
+
+35) git commit -m"gitignore file created"
+
+36) git status 
+
+37) touch any.log test.log akshat.log simpli.log
+
+38) git status   (you will see that these files are not tracked anymore)  
+
+39) git push -u origin master 
+
+#################### SETTING UP THE ALIAS(other name which is easy to write) ##############
+
+lets say you have to git status regularly ,..now typing git status takes time...so what i will do will set the alias for 
+status as st ...so if i git st it will same as git status 
+
+40) git config --global alias.st status    (st will be set as an alias for status)
+
+41) git st
+
+42) git status
+
+43) git config --global --unset alias.st    (unsetting the alias st so st will not be alias is status anymore)
+
+44) git st   (it will not give any output)
+
+
+##now lets say git commit -m"message" we want to set alias for commit -m as com
+
+45) git config --global alias.com 'commit -m'
+
+46) touch file10
+
+47) git add .
+
+48) git com "new commit"
+
+################### TAG - Ability to tag specific points in a repository's history ##########
+
+49) git tag   (list all the tags for me)  (initially it would be blank)
+
+50) git tag login   (it will tag the latest commit with tag: login)
+
+51) git log --oneline  (you will see the tag login on the latets commit) (copy one of the old commit id)
+
+52) git tag tagname <<commit id which you copied in step 51>>   (it will tag the speicific commit id for u)
+
+53) git log --oneline 
+
+54) git tag   (copy one of the tags)
+
+55) git show <<paste the copied tag which u copied in step 54>>  (this will show the details like commit id of that particular tag) 
+
+56) git tag -d <<tagname>>  (delete the tag)
+
+#################### GIT CLONE -> CLONING THE GITHUB AND CREATING THE COPY IN YOUR LOCAL MACHINE ###############
+
+57) Create a new folder -> books
+
+58) right click and open git back 
+
+59) git clone https://github.com/akshu20791/Books  (it will clone the git repo named books in my laptop)
+
+60) now check the folder ..you will see a new folder with books and inside it all the books present in github is present
+
+
+################## FORKING THE REPO -> IT WILL CREATE A NEW REPO IN YOUR GITHUB ACCOUNT FROM THE SOURCE GITHUB REPO ##########
+
+
+61) https://github.com/akshu20791/Books   on the top right corner you will see the option to fork the repo
+
+
+#########Resolve the conflicts ###################################
+
+62) go to your github repo ....click on any file ....edit the file and make some content changes in the file
+
+63) come to your local system...open the same file and make some changes in the file
+
+64) git status   (you will see that particular file is modified)
+
+65) git add .
+
+66) git commit -m"file was updated"
+
+67) git push -u origin master   (you will see that the conflict error is coming on that particular file)
+
+68) git pull     (it will pull the code from github and update the code in your local repo) 
+
+69) open the file in your laptop and update the final content in that file after having the meeting with the another developer 
+and finalizing the final content.
+
+70) git add .
+
+71) git commit -m"conflict resolved in the file"
+
+72) git push -u origin master 
+
+#########BRANCHING CONCEPT######
+
+73) git branch    (list all the branches)
+
+74) git branch branch1    (create a branch with name branch1)
+
+75) git checkout branch1   (you will get into the branch1)
+
+76) git branch    (here * denotes the current branch) 
+
+77) touch file100
+
+78) git add .
+
+79) git commit -m"c1"
+
+80) touch file101
+
+81) git add .
+
+82) git commit -m"c2"
+
+83) git log --oneline
+
+84) git checkout master
+
+85) git log --oneline
+
+86) touch file102 
+
+87) git add .
+
+88) git commit -m"c3"
+
+89) touch file103
+
+90) git add .
+
+91) git commit -m"c4"
+
+92) git merge branch1    (your current branch need to be master to merge with branch1)
+
+93) git log --oneline --graph    (it will show you the log via graphical format) 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
